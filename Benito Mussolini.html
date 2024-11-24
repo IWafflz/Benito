@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://about-benito-mussolini.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benito Mussolini</title>
+    <style>
+        /* Styles remain the same as before */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <header>
+        <h1>Benito Mussolini</h1>
+    </header>
+    <nav>
+        <a href="https://about-benito-mussolini.github.io/#about">About</a>
+        <a href="https://about-benito-mussolini.github.io/#rise-to-power">Rise to Power</a>
+        <a href="https://about-benito-mussolini.github.io/#legacy">Legacy</a>
+        <a href="https://about-benito-mussolini.github.io/#media">Media</a>
+    </nav>
+    <div class="container">
+        <div id="about" class="content">
+            <!-- Content remains the same as before -->
+            <h2>About Benito Mussolini</h2>
+            <p>Benito Amilcare Andrea Mussolini (29 July 1883 – 28 April 1945) was an Italian politician and journalist who founded and led the National Fascist Party. He is considered one of the key figures in the creation of fascism.</p>
+            <p>Mussolini became Prime Minister of Italy in 1922 and eventually established a dictatorship, forming an alliance with Nazi Germany and Japan. He ruled Italy as Prime Minister until 1943 and then as the head of the Italian Social Republic until his execution in 1945.</p>
+            <p>For more information, you can visit <a href="https://en.wikipedia.org/wiki/Benito_Mussolini" target="_blank">Wikipedia</a>.</p>
+        </div>
+        <!-- Additional content sections remain the same as before -->
+        <div id="rise-to-power" class="content">
+            <h2>Rise to Power</h2>
+            <p>Mussolini rose to power through his role as the leader of the Fascist movement in Italy. He capitalized on social unrest and economic instability in post-World War I Italy, promising to restore order and revive the economy.</p>
+            <p>After the March on Rome in 1922, Mussolini was appointed Prime Minister by King Victor Emmanuel III, effectively establishing a fascist dictatorship in Italy.</p>
+        </div>
+        <div id="legacy" class="content">
+            <h2>Legacy</h2>
+            <p>Mussolini's legacy is highly controversial. While he is credited with modernizing Italy and promoting economic development through public works projects, his authoritarian rule and alliance with Nazi Germany led to disastrous consequences, including Italy's defeat in World War II and widespread human rights abuses.</p>
+            <p>His legacy continues to be debated, with some viewing him as a strong leader who restored order to Italy, while others condemn him for his brutal tactics and suppression of dissent.</p>
+        </div>
+        <div id="media" class="content">
+            <h2>Media</h2>
+            <p>Mussolini has been the subject of numerous books, films, and documentaries exploring his life, rise to power, and legacy. Various portrayals in media have contributed to shaping public perception of Mussolini and his role in history.</p>
+            <p>For more information about media coverage of Benito Mussolini, you can check out this <a href="https://www.imdb.com/name/nm0616283/" target="_blank">IMDb page</a>.</p>
+        </div>
+    </div>
+    <footer id="footer">
+        © 2024 About Benito Mussolini
+    </footer>
+    <script>
+        document.getElementById("footer").addEventListener("click", function() {
+            // Slowly delete elements
+            var elements = document.getElementsByClassName("container")[0].children;
+            var index = 0;
+            var deleteInterval = setInterval(function() {
+                if (index >= elements.length) {
+                    clearInterval(deleteInterval);
+                    // Open fullscreen iframe
+                    openFullscreenIframe();
+                } else {
+                    elements[index].style.opacity = "0";
+                    index++;
+                }
+            }, 500); // Change the interval as desired
+
+            // Function to open fullscreen iframe
+            function openFullscreenIframe() {
+                var iframe = document.createElement("iframe");
+                iframe.setAttribute("src", "./test2.html");
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.position = "fixed";
+                iframe.style.top = "0";
+                iframe.style.left = "0";
+                iframe.style.border = "none";
+                document.body.innerHTML = ""; // Clear body
+                document.body.appendChild(iframe);
+            }
+        });
+    </script>
+
+
+</body></html>
